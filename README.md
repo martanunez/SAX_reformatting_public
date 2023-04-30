@@ -45,15 +45,24 @@ Not sure if it is worthy to by default apply the workaround to all cases since t
 ## Code
 [Python](https://www.python.org/)
 
-Required packages: VTK, SimpleITK, NumPy, pyvista, pyacvd. 
 
 ## Instructions
-[Recommended] Create specific conda environment:
+Clone the repository:
 ```
-conda create --name sax_reformatting python=3.8
+git clone https://github.com/martanunez/SAX_reformatting_public
+```
+[Optional] Create specific conda environment:
+```
+conda create --name sax_reformatting python=3.9
 conda activate sax_reformatting
 ```
-Install packages: 
+Install required packages (see Dependencies section below):
+```
+cd SAX_reformatting_public
+python setup.py install
+```
+[Optional] Manually install required packages, e.g.:
+
 ```
 conda install -c simpleitk simpleitk
 conda install -c anaconda numpy
@@ -62,12 +71,16 @@ pip install pyvista
 pip install pyacvd
 ```
 
-Clone the repository:
-```
-git clone https://github.com/martanunez/SAX_reformatting_public
+## Dependencies
+The scripts in this repository were successfully run with:
+1. Ubuntu 16.04
+    - [Python](https://www.python.org/) 3.9.16
+    - [SimpleITK](https://simpleitk.readthedocs.io/en/master/) 2.2.1
+    - [NumPy](https://numpy.org/) 1.24.3
+    - [VTK](https://vtk.org/) 9.2.6
+    - [Pyvista](https://docs.pyvista.org/version/stable/) 0.38.5
+    - [pyacvd](https://pypi.org/project/pyacvd/) 0.2.9
 
-cd SAX_reformatting_public
-```
 
 
 ## Usage
