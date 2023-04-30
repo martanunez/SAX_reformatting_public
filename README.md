@@ -3,7 +3,7 @@ Author: Marta Nuñez-Garcia (marnugar@gmail.com)
 
 ## About
 Implementation of the method described in:
-[*Automatic multiplanar CT reformatting from trans-axial into left ventricle short-axis view*. Marta Nuñez-Garcia et al. STACOM (2020)](https://link.springer.com/chapter/10.1007/978-3-030-68107-4_2). Please cite this reference when using this code. PDF available here: [hal.inria.fr](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjM2O2xqaz1AhUP2BQKHR95AyIQFnoECAsQAQ&url=https%3A%2F%2Fhal.inria.fr%2Fhal-02961500%2Fdocument&usg=AOvVaw2t4ZjZm5ZgfdZa1cxhlp8w)
+[*Automatic multiplanar CT reformatting from trans-axial into left ventricle short-axis view*. Marta Nuñez-Garcia et al. STACOM (2020)](https://link.springer.com/chapter/10.1007/978-3-030-68107-4_2). Please cite this reference when using this code. PDF available here: [hal.inria.fr](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjM2O2xqaz1AhUP2BQKHR95AyIQFnoECAsQAQ&url=https%3A%2F%2Fhal.inria.fr%2Fhal-02961500%2Fdocument&usg=AOvVaw2t4ZjZm5ZgfdZa1cxhlp8w). Also in this repo (SAX_reformat_Stacom2020_cr.pdf)
 
 Given a raw trans-axial (TA) CT image and the corresponding LV endo, LV wall and RV epi segmentations (.mha or .vtk), compute LV short axis view image. It also reformats the masks.
 
@@ -52,6 +52,9 @@ Required packages: VTK, SimpleITK, NumPy, pyvista, pyacvd.
 ```
 conda create --name sax_reformatting python=3.8
 conda activate sax_reformatting
+```
+Install packages: 
+```
 conda install -c simpleitk simpleitk
 conda install -c anaconda numpy
 pip install vtk    # conda not good behaviour
@@ -59,22 +62,13 @@ pip install pyvista
 pip install pyacvd
 ```
 
-
 Clone the repository:
 ```
-git clone https://github.com/martanunez/SAX_reformatting
+git clone https://github.com/martanunez/SAX_reformatting_public
 
-cd SAX_reformatting
+cd SAX_reformatting_public
 ```
 
-
-Install the package sax_reformatting:
-```
-pip install -r requirements.txt
-python3 -m pip install --upgrade build
-python3 -m build
-python -m pip install .
-```
 
 ## Usage
 ```
