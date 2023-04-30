@@ -1,6 +1,8 @@
-# Compute LV long axis after reformatting and check if it's very different to the theoretical one: [0, 0, 1]
-# Use uniformly remeshed meshes (different number of points than the ones used in TA view to try to do not
-# reproduce same potential errors).
+"""
+Compute LV long axis after reformatting and check if it's very different to the theoretical one: [0, 0, 1]
+Use uniformly remeshed meshes (different number of points than the ones used in TA view to try to do not reproduce
+same potential errors)
+"""
 
 from aux_functions import *
 
