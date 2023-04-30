@@ -32,7 +32,7 @@ parser.add_argument('--mask_rvepi', type=str, help='Input RV epi mask name')
 parser.add_argument('--mask_lvepi_sax', type=str, help='OUTPUT LV epi mask name')
 args = parser.parse_args()
 
-keep_world_coordinates = True
+keep_world_coordinates = False     # same as when computing the corresponding sax image + transformation matrix!!
 
 # inputs
 ifilename_im_sax = args.path + args.ct_im_sax
