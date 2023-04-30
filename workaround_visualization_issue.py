@@ -1,5 +1,6 @@
-# Manually set image Direction to ease data visualization
-# CAREFUL, we'll lose matching world coordinates with initial TA image (not relevant in most cases...)
+""" Manually set image Direction to ease data visualization
+CAREFUL, we'll lose matching world coordinates with initial TA image (not relevant in most cases...)
+"""
 
 import SimpleITK as sitk
 
