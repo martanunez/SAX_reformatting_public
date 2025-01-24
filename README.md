@@ -16,11 +16,11 @@ Manually set image parameters in the beginning: image size (nb of voxels), spaci
 
 Resampling diagram:
 
-![resampling diagram](https://github.com/martanunez/SAX_reformatting/blob/main/diagram_resampling.png)
+![resampling diagram](https://github.com/martanunez/SAX_reformatting_public/blob/main/diagram_resampling.png)
 
 Schematic pipeline:
 
-![Schematic pipeline](https://github.com/martanunez/SAX_reformatting/blob/main/schematic_pipeline.png)
+![Schematic pipeline](https://github.com/martanunez/SAX_reformatting_public/blob/main/schematic_pipeline.png)
 
 ## Note
 With respect to the method presented in the paper, this code additionally includes:
